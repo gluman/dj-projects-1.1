@@ -21,6 +21,6 @@ from app.views import index, show_current_time, show_workdir
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('/time', show_current_time, name='time'),
-    path('/workdir', show_workdir(), name='workdir'),
+    path('current_time/', show_current_time, name='time'),
+    path('workdir/', show_workdir, name='workdir'),
 ]
